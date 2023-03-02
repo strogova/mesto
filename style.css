@@ -15,7 +15,7 @@
   margin: 0 auto;
   max-width: 880px;
   width: 100%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   border-bottom: 1px solid #545454;
 }
 
@@ -31,4 +31,122 @@
   }
 }
 /*header end*/
+
+/*profile start*/
+.profile{
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  outline: 1px coral solid;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 860px){
+  .profile{
+    padding: 42px 0 36px;
+    max-width: 282px;
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+  }
+}
+.avatar{
+  display: block;
+  max-width: 120px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+@media screen and (max-width: 860px){
+  .avatar{
+    margin: 0 0 26px 81px;
+  }
+}
+
+.profile-info{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 336px;
+  max-height: 77px;
+  align-self: center;
+  margin-right: 224px;
+}
+
+@media screen and (max-width: 860px){
+  .profile-info{
+    margin: 0 auto;
+    max-width: 282px;
+    margin: 0 0 33px 46px;
+  }
+}
+
+.profile-info__name{
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.14;
+  margin: 0;
+  margin-right: 18px;
+  padding-bottom: 7px;
+}
+@media screen and (max-width: 860px){
+  .profile-info__name{
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+  }
+}
+.profile-info__about-me{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+@media screen and (max-width: 860px){
+  .profile-info__about-me{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+}
+.profile-info__edit-btn{
+  background-image: url(./image/edit-button.svg);
+  min-width: 24px;
+  min-height: 24px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  align-self: center;
+  border: none;
+}
+@media screen and (max-width: 860px){
+  .profile-info__edit-btn{
+    min-width: 18px;
+    min-height: 18px;
+  }
+}
+
+.add-button{
+  background-image: url(./image/add-button.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  min-width: 150px;
+  min-height: 50px;
+  align-self: center;
+  padding: 0;
+  border: none;
+}
+@media screen and (max-width: 860px){
+  .add-button{
+    background-image: url(./image/add-button-mobile.svg);
+    min-width: 282px;
+  }
+}
+
+/*profile end*/
 
