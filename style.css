@@ -1,0 +1,34 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/font.css);
+.page{
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background: #000;
+  text-rendering: optimizeLegibility;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/*header start*/
+.header{
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+  box-sizing: content-box;
+  border-bottom: 1px solid #545454;
+}
+
+.header__logo{
+  max-width: 142px;
+  padding: 45px 0 38px;
+}
+
+@media screen and (max-width: 880px){
+  .header__logo{
+    max-width: 104px;
+    padding: 28px 0 29px 27px;
+  }
+}
+/*header end*/
+
