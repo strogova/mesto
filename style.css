@@ -41,8 +41,7 @@
   color: #fff;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
-  outline: 1px coral solid;
+  padding: 40px 0 50px;
   justify-content: space-between;
 }
 
@@ -97,6 +96,7 @@
     font-size: 27px;
     line-height: 33px;
     text-align: center;
+    max-width: 189px;
   }
 }
 .profile-info__about-me{
@@ -110,6 +110,7 @@
   .profile-info__about-me{
     font-size: 14px;
     line-height: 17px;
+   padding-left: 19px;
     text-align: center;
   }
 }
@@ -134,7 +135,7 @@
   background-image: url(./image/add-button.png);
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: contain;
+  background-size: cover;
   min-width: 150px;
   min-height: 50px;
   align-self: center;
@@ -150,3 +151,105 @@
 
 /*profile end*/
 
+/*elements start*/
+.elements{
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.element-list{
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  gap: 20px 17px;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.element{
+  background-color: #fff;
+  background: #FFFFFF;
+  border-radius: 10px;
+  max-width: 282px;
+  width: 100%;
+  max-height: 361px;
+  height: 100%;
+}
+
+.element__image{
+  border-radius: 10px 10px 0 0;
+  max-width: 282px;
+  max-height: 282px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.element__name{
+  margin: 0;
+  max-width: 189px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 25px 30px 25px 21px;
+}
+
+.element__stats{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.botton-like{
+  background-image: url(./image/like-ico.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  min-width: 22px;
+  min-height: 19px;
+  align-self: center;
+  padding: 0;
+  border: none;
+  margin-right: 30px;
+}
+
+.botton-like:active{
+  background-image: url(./image/act-like-ico.svg);
+}
+/*elements end*/
+
+/*footer start*/
+.footer{
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+}
+.footer__copyright{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #545454;
+  margin: 66px 0 56px;
+}
+
+@media screen and (max-width: 880px){
+  .footer__copyright{
+    font-size: 14px;
+    line-height: 17px;
+    margin: 48px 19px 33px;
+}
+/*footer end*/
+
+/*popup start*/
+
+/*popup end*/
