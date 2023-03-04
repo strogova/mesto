@@ -124,6 +124,11 @@
   align-self: center;
   border: none;
 }
+
+.profile-info__edit-btn:hover{
+  opacity: 0.6;
+}
+
 @media screen and (max-width: 860px){
   .profile-info__edit-btn{
     min-width: 18px;
@@ -141,6 +146,10 @@
   align-self: center;
   padding: 0;
   border: none;
+}
+
+.add-button:hover{
+  opacity: 0.6;
 }
 @media screen and (max-width: 860px){
   .add-button{
@@ -201,7 +210,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding: 25px 30px 25px 21px;
+  margin: 25px 0 25px 21px;
 }
 
 .element__stats{
@@ -222,8 +231,12 @@
   margin-right: 30px;
 }
 
-.button-like:active{
-  background-image: url(./image/act-like-ico.svg);
+.button-like:hover{
+  opacity: 0.6;
+}
+
+.button-like_active{
+
 }
 /*elements end*/
 
@@ -261,13 +274,13 @@
   height: 100%;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .popup_opened{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup__container{
@@ -304,6 +317,10 @@
   position: absolute;
   top: -40px;
   right: -40px;
+}
+
+.popup__close-btn:hover{
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 585px) {
@@ -387,6 +404,10 @@
   margin: 48px 36px 37px;
   padding: 0;
   border: none;
+}
+
+.popup__submit-btn:hover{
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 585px) {
