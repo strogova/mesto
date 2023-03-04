@@ -1,0 +1,23 @@
+.popup__input-wrap{
+  max-width: 358px;
+  margin: 0 auto 30px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom:  1px solid rgba(0, 0, 0,0.2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding: 0;
+}
+
+.popup__input-wrap:last-of-type{
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 585px) {
+  .popup__input-wrap{
+    max-width: 238px;
+  }
+}

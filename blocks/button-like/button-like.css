@@ -1,0 +1,16 @@
+.button-like{
+  background-image: url(../../image/like-ico.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  min-width: 22px;
+  min-height: 19px;
+  align-self: center;
+  padding: 0;
+  border: none;
+  margin-right: 30px;
+}
+
+.button-like:hover{
+  opacity: 0.6;
+}
