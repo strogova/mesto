@@ -1,5 +1,5 @@
 .profile-info__edit-btn{
-  background-image: url(../../../image/edit-button.svg);
+  background-image: url(../../../images/edit-button.svg);
   min-width: 24px;
   min-height: 24px;
   background-repeat: no-repeat;
@@ -7,6 +7,8 @@
   background-size: contain;
   align-self: center;
   border: none;
+  cursor: pointer;
+  transition: opacity 0.4s;
 }
 
 .profile-info__edit-btn:hover{

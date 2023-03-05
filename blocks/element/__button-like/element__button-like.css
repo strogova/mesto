@@ -1,5 +1,5 @@
-.button-like{
-  background-image: url(../../image/like-ico.svg);
+.element__button-like{
+  background-image: url(../../../images/like-ico.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: contain;
@@ -9,8 +9,10 @@
   padding: 0;
   border: none;
   margin-right: 30px;
+  cursor: pointer;
+  transition: opacity 0.4s;
 }
 
-.button-like:hover{
-  opacity: 0.6;
+.element__button-like:hover{
+  opacity: 0.5;
 }

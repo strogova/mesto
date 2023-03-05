@@ -9,85 +9,85 @@
 </head>
 <body class="page">
   <header class="header">
-    <img src="./image/logo.svg" alt="логотип" class="header__logo">
+    <img src="./images/logo.svg" alt="логотип" class="header__logo">
   </header>
   <main class="content">
     <section class="profile">
-      <img src="./image/image-avatar.jpg" alt="аватар пользователя" class="avatar">
+      <img src="./images/image-avatar.jpg" alt="аватар пользователя" class="profile__avatar">
       <div class="profile-info">
         <div class="profile-info__item">
           <h1 class="profile-info__name">Жак-Ив Кусто</h1>
-          <button class="profile-info__edit-btn" type="button"></button>
+          <button class="profile-info__edit-btn" type="button" aria-label="редактировать профиль"></button>
         </div>
         <p class="profile-info__about-me">Исследователь океана</p>
       </div>
-      <button class="add-button" type="button"></button>
+      <button class="profile__add-button" type="button" aria-label="добавить фотографию"></button>
     </section>
     <section class="elements">
-      <ul class="element-list">
+      <ul class="elements__element-list">
         <li class="element">
-          <img src="./image/karachaevsk.jpg" alt="фотография пользователя" class="element__image">
+          <img src="./images/karachaevsk.jpg" alt="фотография пользователя" class="element__image">
           <div class="element__stats">
             <h2 class="element__name">Карачаевск</h2>
-            <button class="button-like button-like_active" type="button"></button>
+            <button class="element__button-like element__button-like_active" type="button" aria-label="лайк"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./image/dombai.png" alt="фотография пользователя" class="element__image">
+          <img src="./images/dombai.png" alt="фотография пользователя" class="element__image">
           <div class="element__stats">
             <h2 class="element__name">Домбай</h2>
-            <button class="button-like button-like_active" type="button"></button>
+            <button class="element__button-like element__button-like_active" type="button" aria-label="лайк"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./image/elbrus.png" alt="фотография пользователя" class="element__image">
+          <img src="./images/elbrus.png" alt="фотография пользователя" class="element__image">
           <div class="element__stats">
             <h2 class="element__name">Эльбрус</h2>
-            <button class="button-like button-like_active" type="button"></button>
+            <button class="element__button-like element__button-like_active" type="button" aria-label="лайк"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./image/dombai2.png" alt="фотография пользователя" class="element__image">
+          <img src="./images/dombai2.png" alt="фотография пользователя" class="element__image">
           <div class="element__stats">
             <h2 class="element__name">Домбай</h2>
-            <button class="button-like button-like_active" type="button"></button>
+            <button class="element__button-like element__button-like_active" type="button" aria-label="лайк"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./image/elbrus2.png" alt="фотография пользователя" class="element__image">
+          <img src="./images/elbrus2.png" alt="фотография пользователя" class="element__image">
           <div class="element__stats">
             <h2 class="element__name">Эльбрус</h2>
-            <button class="button-like button-like_active" type="button"></button>
+            <button class="element__button-like element__button-like_active" type="button" aria-label="лайк"></button>
           </div>
         </li>
         <li class="element">
-          <img src="./image/karachaevo-cherk.png" alt="фотография пользователя" class="element__image">
+          <img src="./images/karachaevo-cherk.png" alt="фотография пользователя" class="element__image">
           <div class="element__stats">
             <h2 class="element__name">Карачаево-Черкессия</h2>
-            <button class="button-like button-like_active" type="button"></button>
+            <button class="element__button-like element__button-like_active" type="button" aria-label="лайк"></button>
           </div>
         </li>
       </ul>
     </section>
   </main>
   <footer class="footer">
-    <h3 class="footer__copyright">© 2023 Mesto Russia</h3>
+    <p class="footer__copyright">© 2023 Mesto Russia</p>
   </footer>
-  <section class="popup">
+  <div class="popup">
     <div class="popup__container">
-      <form class="form">
-        <button class="popup__close-btn" type="button"></button>
+      <button class="popup__close-btn" type="button" aria-label="закрыть"></button>
+      <form class="popup__form" name="editForm">
         <h2 class="popup__title">Редактировать профиль</h2>
         <fieldset class="popup__input-wrap">
-          <input class="popup__name" type="text" placeholder="Ваше имя" name="name">
+          <input class="popup__input popup__input_edit_name" type="text" placeholder="Ваше имя" name="name" required>
         </fieldset>
         <fieldset class="popup__input-wrap">
-          <input class="popup__info" type="text" placeholder="Расскажите о себе" name="description">
+          <input class="popup__input popup__input_edit_job" type="text" placeholder="Расскажите о себе" name="description" required>
         </fieldset>
-        <button class="popup__submit-btn" type="submit">Сохранить</button>
+          <button class="popup__submit-btn" type="submit">Сохранить</button>
       </form>
     </div>
-  </section>
+  </div>
   <script src="./scripts/index.js"></script>
 </body>
 </html>

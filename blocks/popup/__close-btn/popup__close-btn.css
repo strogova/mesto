@@ -1,5 +1,5 @@
 .popup__close-btn{
-  background-image: url(../../../image/close-ico-btn.svg);
+  background-image: url(../../../images/close-ico-btn.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: contain;
@@ -11,6 +11,8 @@
   position: absolute;
   top: -40px;
   right: -40px;
+  cursor: pointer;
+  transition: opacity 0.4s;
 }
 
 .popup__close-btn:hover{
